@@ -16,18 +16,18 @@ All repositories are Apache 2.0.
 
 ## Active projects
 
-### `EML` — Elementary functions from a single operator *(Phase 0 complete; active)*
-A Lean 4 / Mathlib formalization of the EML operator, `eml(x, y) := exp(x) − Log(y)`, which Odrzywołek (arXiv:2603.21852) showed is — together with the constant 1 — sufficient to express all or most  standard elementary functions on appropriate principal-branch domains. A continuous-function analogue of Sheffer/NAND completeness for Boolean logic. The mathematics is due to Odrzywołek; this repository is an independent formalization effort with phase-gated specification documents. → [evolvingtech/EML](https://github.com/evolvingtech/EML)
+### [`EML`](https://github.com/evolvingtech/EML) — Elementary functions from a single operator *(Phase 0 complete; active)*
+A Lean 4 / Mathlib formalization of the EML operator, `eml(x, y) := exp(x) − Log(y)`, which Odrzywołek (arXiv:2603.21852) showed is — together with the constant 1 — sufficient to express all standard elementary functions on appropriate principal-branch domains. A continuous-function analogue of Sheffer/NAND completeness for Boolean logic. The mathematics is due to Odrzywołek; this repository is an independent formalization effort with phase-gated specification documents.
 
-### `lean-ieee754-audit` — IEEE 754 interface audit framework *(in progress)*
+### `IEEE754Audit` — IEEE 754 interface audit framework *(in progress)*
 A Lean 4 toolchain for **pre-deployment interface audits** of floating-point systems. Given two interface specifications and an input domain, the toolchain produces one of two machine-checkable artifacts: (a) a formal proof of bit-identical or tolerance-bounded equivalence, or (b) a precise enumeration of residual ambiguities, each with a concrete witness input that demonstrates divergence. Builds on Mathlib and the in-progress FloatSpec port of Flocq's IEEE 754 formalization, with planned upstream contributions to FloatSpec.
 
 Application domains include aerospace (pre-integration verification of components built by different vendors for remote deployment), autonomous systems, medical devices, and any setting where two conformant implementations of a numerical interface need to be proven equivalent before they're allowed to talk to each other.
 
-### `lean-buckingham-pi` — Dimensional analysis and the Pi theorem *(release imminent)*
+### `BuckinghamPi` — Dimensional analysis and the Pi theorem *(release imminent)*
 A Lean 4 formalization of the Buckingham Pi theorem with engineering-facing tooling. Useful for formally checking dimensional consistency of physical models, identifying minimal dimensionless groupings, and surfacing cases where an empirical correlation is hiding a missing physical variable.
 
-### `lean-adding-in-quadrature` — Uncertainty propagation *(released)*
+### [`AddingInQuadrature`](https://github.com/evolvingtech/AddingInQuadrature) — Uncertainty propagation *(released)*
 A Lean 4 library covering the conditions under which independent uncertainties combine in quadrature, the conditions under which they don't, and the formal structure behind common engineering shortcuts.
 
 ### Interoperability libraries *(in progress)*
