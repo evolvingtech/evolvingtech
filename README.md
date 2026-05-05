@@ -19,7 +19,7 @@ All repositories are Apache 2.0.
 ### [`EML`](https://github.com/evolvingtech/EML) — Elementary functions from a single operator *(Phase 0 complete; active)*
 A Lean 4 / Mathlib formalization of the EML operator, `eml(x, y) := exp(x) − Log(y)`, which Odrzywołek (arXiv:2603.21852) showed is — together with the constant 1 — sufficient to express all standard elementary functions on appropriate principal-branch domains. A continuous-function analogue of Sheffer/NAND completeness for Boolean logic. The mathematics is due to Odrzywołek; this repository is an independent formalization effort with phase-gated specification documents.
 
-### `IEEE754Audit` — IEEE 754 interface audit framework *(in progress)*
+### [`IEEE754Audit`](./IEEE754AuditAbstract.md) — IEEE 754 interface audit framework *(in progress; abstract available)*
 A Lean 4 toolchain for **pre-deployment interface audits** of floating-point systems. Given two interface specifications and an input domain, the toolchain produces one of two machine-checkable artifacts: (a) a formal proof of bit-identical or tolerance-bounded equivalence, or (b) a precise enumeration of residual ambiguities, each with a concrete witness input that demonstrates divergence. Builds on Mathlib and the in-progress FloatSpec port of Flocq's IEEE 754 formalization, with planned upstream contributions to FloatSpec.
 
 Application domains include aerospace (pre-integration verification of components built by different vendors for remote deployment), autonomous systems, medical devices, and any setting where two conformant implementations of a numerical interface need to be proven equivalent before they're allowed to talk to each other.
