@@ -16,7 +16,7 @@ All repositories are Apache 2.0.
 
 ## Active projects
 
-### [`ETC Verify™`](https://github.com/evolvingtech/etc-verify) — Foundational substrate for cross-domain interface composition *(active; v0.2.0 released)*
+### [`ETC Verify™`](https://github.com/evolvingtech/etc-verify) — Foundational substrate for cross-domain interface composition *(active; v0.2.1 released)*
 A Lean-based contract algebra for architectural-level verification of how engineered components fit together. Four named operators (sequential composition, shared-resource composition, refinement, conformance) with axiom-free soundness theorems. Interfaces are first-class objects carrying explicit assumes, guarantees, and silences (aspects deliberately left unmodeled, surfaced as typed data rather than hidden). The Contract type is parameterized over a modality marker; the substrate ships with the Untimed modality, and the architecture supports additional modalities via typeclass instances in downstream libraries without modifying the substrate.
 
 ### [`IEEE754Audit`](./IEEE754AuditAbstract.md) — IEEE 754 interface audit framework *(in progress; abstract available)*
